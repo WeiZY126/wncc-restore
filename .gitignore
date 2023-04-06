@@ -1,0 +1,3 @@
+# Project exclude paths
+/restore/ExceptionHandler/target/
+/restore/target/

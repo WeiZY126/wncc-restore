@@ -1,0 +1,23 @@
+{
+  "kafka-source": {
+    "bootstrapServers": "172.21.9.101:9092,172.21.9.102:9092,172.21.9.103:9092",
+    "groupId": "test",
+    "topic": "error_topic_test0406",
+    "partitionId": 1,
+    "startingOffsets": "latest",
+    "decryptKey": "",
+    "decryptFields": ""
+  },
+  "kafka-sink": {
+    "bootstrapServers": "172.21.9.101:9092,172.21.9.102:9092,172.21.9.103:9092",
+    "topic": "hljrestore",
+    "partitionId": 1,
+    "encryptKey": "8749284927849211",
+    "encryptFields": "CUST_NAME;ID_ADDRESS;ID_ICCID;ID_TYPE;CUST_ADDRESS;CREATE_NOTE;CUST_LEVEL"
+  },
+  "kafka-error":{
+    "bootstrapServers": "172.21.9.101:9092,172.21.9.102:9092,172.21.9.103:9092",
+    "topic": "error_failed_handler_topic_test0406",
+    "partitionId":1
+  }
+}

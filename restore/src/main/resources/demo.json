@@ -1,0 +1,27 @@
+{
+  "kafka-source": {
+    "bootstrapServers": "172.21.9.101:9092,172.21.9.102:9092,172.21.9.103:9092",
+    "groupId": "group1",
+    "topic": "hljrestore",
+    "partitionId": 0,
+    "startingOffsets": "earliest",
+    "timeStamp": "",
+    "offSets": ""
+  },
+  "iceberg": {
+    "catalogName": "hadoop_catalog",
+    "catalogType": "hadoop",
+    "hiveCatalogUri": "",
+    "warehousePath": "hdfs:///iceberg/hadoop/warehouse/restore_catalog",
+    "database": "TEST",
+    "table": "CT_CUSTCONTACT_INFO"
+  },
+  "kafka-sink": {
+    "bootstrapServers": "172.21.9.101:9092,172.21.9.102:9092,172.21.9.103:9092",
+    "topic": "hljtransform",
+    "partitionId": 0
+  },
+  "secretInfo": {
+    "words": ["TABLE","OP","OP_TIME"]
+  }
+}
